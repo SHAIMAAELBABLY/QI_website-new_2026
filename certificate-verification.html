@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QI certificate verification page for training certificates.">
+  <title>QI | Verification Certificates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html" aria-label="QI Home">
+        <img class="logo-image" src="imgs/QI_LOGO.png" alt="QI Logo">
+        <!-- <span class="logo-text">Quality Institution</span> -->
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">About QI</a>
+                <a href="index.html#services">Services</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">Dark</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Training Services</p>
+        <h1>Verification Certificates</h1>
+        <!-- <p>Use this page to submit certificate verification requests.</p> -->
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="card reveal">
+          <img class="card-image" src="imgs/cert1.png" alt="Certificate verification documents">
+          <h2>Verify Training Certificate</h2>
+          <form id="verificationForm">
+            <div class="form-grid">
+              <div>
+                <label for="certificateId">Certificate Number</label>
+                <input id="certificateId" name="certificateId" type="text" required placeholder="Enter Your Certificate No.">
+              </div>
+              <!-- <div>
+                <label for="certificateName">Trainee Name</label>
+                <input id="certificateName" name="certificateName" type="text" required>
+              </div> -->
+            </div>
+
+            <button class="btn btn-primary" type="submit">Verify Certificate</button>
+            <p id="verificationResult" class="verification-result" aria-live="polite"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> QI. All rights reserved.</p>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

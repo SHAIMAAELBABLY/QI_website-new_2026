@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Quality Institution for Engineering and Management Consultancy (QI).">
+  <title>QI | Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html" aria-label="QI Home">
+        <img class="logo-image" src="imgs/QI_LOGO.png" alt="QI Logo">
+        <!-- <span class="logo-text">Quality Institution</span> -->
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">About QI</a>
+                <a href="index.html#services">Services</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">Dark</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Contact Us</p>
+        <h1>Start a Project with QI</h1>
+        <p>
+          Contact us to discuss consultation, audit, or training requirements.
+          We will tailor a solution based on your organization or individual goals.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <article class="card reveal">
+          <img class="card-image" src="imgs/cont.png" alt="Customer support team">
+          <h3>QI Contact Information</h3>
+          <p><strong>Email:</strong> <a class="text-link" href="mailto:info@qiemme.com">info@qiemme.com</a></p>
+          <p><strong>Phone:</strong> +20 1156633288</p>
+          <p><strong>Address:</strong> 06 Aysha Fahmy, Ground Floor, Saba bash, Alexandria, Egypt</p>
+          <p>
+            <strong>WhatsApp:</strong>
+            <a class="whatsapp-link" href="https://wa.me/201156633288" target="_blank" rel="noopener noreferrer" aria-label="Chat with QI on WhatsApp">
+              <span class="wa-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
+                  <path fill="currentColor" d="M12 2a10 10 0 0 0-8.76 14.8L2 22l5.34-1.2A10 10 0 1 0 12 2zm5.6 14.2c-.24.67-1.4 1.3-1.93 1.38-.5.08-1.14.12-1.84-.1-.43-.14-.98-.32-1.7-.64-2.98-1.29-4.92-4.35-5.06-4.55-.14-.2-1.2-1.6-1.2-3.05 0-1.44.76-2.15 1.03-2.44.27-.3.6-.37.8-.37h.57c.2 0 .47-.08.74.58.27.67.9 2.3.98 2.46.08.16.13.35.03.56-.1.21-.15.35-.3.54-.15.18-.32.4-.46.53-.15.14-.3.29-.13.57.18.3.8 1.31 1.72 2.12 1.2 1.06 2.2 1.39 2.5 1.55.3.16.47.13.64-.08.18-.21.75-.88.95-1.18.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.96.3.15.5.22.57.35.07.12.07.72-.17 1.39z"/>
+                </svg>
+              </span>
+              00201156633288
+            </a>
+          </p>
+          <p>
+            Working Hours: Sunday to Thursday, 9:00 AM - 5:00 PM
+          </p>
+        </article>
+
+        <article class="card reveal" id="signup">
+          <img class="card-image" src="imgs/email.png" alt="Client inquiry form">
+          <h3>Inquiry / Sign Up Form</h3>
+          <form id="contactForm">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required>
+
+            <label for="email">Client Email Address</label>
+            <input id="email" name="email" type="email" required>
+
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="Consultation Services">Consultation Services</option>
+              <option value="Audit Services">Audit Services</option>
+              <option value="Training Services">Training Services</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Submit Inquiry</button>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> QI. All rights reserved.</p>
+      <a href="index.html">About QI</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

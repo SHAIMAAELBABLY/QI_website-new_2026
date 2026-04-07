@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QI training registration form for companies and individuals.">
+  <title>QI | Regestration Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html" aria-label="QI Home">
+        <img class="logo-image" src="imgs/QI_LOGO.png" alt="QI Logo">
+        <span class="logo-text">Quality Institution</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav class="site-nav" data-nav>
+        <a href="index.html">About QI</a>
+                <a href="index.html#services">Services</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">Dark</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow">Training Services</p>
+        <h1>Regestration Form</h1>
+        <p>Complete this form to register for QI training programs.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="card reveal">
+          <img class="card-image" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80" alt="Training registration process">
+          <h2>Training Registration</h2>
+          <form id="trainingRegistrationForm">
+            <div class="form-grid">
+              <div>
+                <label for="regFullName">Full Name</label>
+                <input id="regFullName" name="fullName" type="text" required>
+              </div>
+              <div>
+                <label for="regCompany">Company Name</label>
+                <input id="regCompany" name="company" type="text">
+              </div>
+              <div>
+                <label for="regEmail">Email Address</label>
+                <input id="regEmail" name="email" type="email" required>
+              </div>
+              <div>
+                <label for="regPhone">Mobile Number</label>
+                <input id="regPhone" name="phone" type="tel" required placeholder="e.g. 00201156633288">
+              </div>
+              <div>
+                <label for="regCourse">Course / Program</label>
+                <select id="regCourse" name="course" required>
+                  <option value="">Select course</option>
+                  <option value="ISO Lead Auditor">ISO Lead Auditor</option>
+                  <option value="Internal Auditor">Internal Auditor</option>
+                  <option value="Quality Management Systems">Quality Management Systems</option>
+                  <option value="Health and Safety">Health and Safety</option>
+                  <option value="Customized Corporate Training">Customized Corporate Training</option>
+                </select>
+              </div>
+              <div>
+                <label for="regMode">Training Mode</label>
+                <select id="regMode" name="mode" required>
+                  <option value="">Select mode</option>
+                  <option value="Classroom">Classroom</option>
+                  <option value="Online">Online</option>
+                  <option value="In-house">In-house</option>
+                </select>
+              </div>
+              <div>
+                <label for="regDate">Preferred Date</label>
+                <input id="regDate" name="preferredDate" type="date">
+              </div>
+              <div>
+                <label for="regCountry">Country</label>
+                <input id="regCountry" name="country" type="text">
+              </div>
+            </div>
+
+            <label for="regMessage">Notes</label>
+            <textarea id="regMessage" name="message" rows="4" placeholder="Any additional details..."></textarea>
+
+            <button class="btn btn-primary" type="submit">Submit Registration</button>
+            <p id="trainingFormMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; <span id="year"></span> QI. All rights reserved.</p>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
